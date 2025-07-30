@@ -17,16 +17,50 @@
         /* Aplicamos la fuente Inter a todo el cuerpo del documento */
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* bg-gray-50 */
+            color: #1f2937; /* text-gray-800 */
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
+
+    <!-- INICIO: Nueva Barra de Navegación Limpia -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="https://fuchisimo-microcapilar.com/">
+                        <img class="h-12 w-12 rounded-full" src="https://framerusercontent.com/assets/gRMtga5OdqLcnRtlm6axBiGtQo.png" alt="Logo Fuchisimo">
+                    </a>
+                </div>
+
+                <!-- Links del Menú -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="https://fuchisimo-microcapilar.com/#results" class="text-gray-700 hover:text-black text-sm font-medium">Resultados</a>
+                    <a href="https://fuchisimo-microcapilar.com/#services" class="text-gray-700 hover:text-black text-sm font-medium">Servicios</a>
+                    <a href="https://fuchisimo-microcapilar.com/#raquel" class="text-gray-700 hover:text-black text-sm font-medium">Conóceme</a>
+                    <a href="https://fuchisimo-microcapilar.com/#faqs" class="text-gray-700 hover:text-black text-sm font-medium">Q&A</a>
+                    <a href="https://wa.me/34667053971?text=Hola%2C%20me%20gustaria%20saber%20mas%20informaci%C3%B3n" target="_blank" rel="noopener" class="text-gray-700 hover:text-black text-sm font-medium">Contáctanos</a>
+                </div>
+
+                <!-- Iconos Sociales -->
+                <div class="hidden md:flex md:items-center md:space-x-5">
+                    <a href="https://www.instagram.com/fuchisimo.microcapilar.bcn/" target="_blank" rel="noopener" class="text-gray-500 hover:text-gray-900">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+                    </a>
+                    <a href="mailto:raquelgarab@gmail.com" target="_blank" rel="noopener" class="text-gray-500 hover:text-gray-900">
+                        <span class="sr-only">Email</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN: Nueva Barra de Navegación -->
 
     <!-- Contenedor principal -->
-    <!-- mx-auto: centra el contenedor horizontalmente -->
-    <!-- max-w-4xl: establece un ancho máximo para una mejor legibilidad en pantallas grandes -->
-    <!-- w-11/12 md:w-4/5: ocupa el 91% del ancho en móviles y el 80% en pantallas medianas y superiores -->
-    <!-- py-8 sm:py-12: añade espaciado vertical (padding) -->
     <main class="mx-auto max-w-4xl w-11/12 md:w-4/5 py-8 sm:py-12">
         
         <!-- Encabezado de la política -->
@@ -87,7 +121,7 @@
             
             <section>
                 <h2 class="text-2xl font-bold mb-3 text-gray-900">Cookies</h2>
-                <p>Para obtener más información sobre cómo utilizamos las cookies y sus opciones, por favor, consulte nuestra <a href="#" class="text-blue-600 hover:underline">Política de Cookies</a>.</p>
+                <p>Para obtener más información sobre cómo utilizamos las cookies y sus opciones, por favor, consulte nuestra <a href="https://fuchisimo-microcapilar.github.io/fuchisimo-politicas/politicas-cookies" class="text-blue-600 hover:underline">Política de Cookies</a>.</p>
             </section>
 
             <section>
@@ -101,12 +135,35 @@
             </section>
         </div>
         
-        <!-- Pie de página de la política -->
-        <footer class="mt-12 pt-6 border-t text-center text-sm text-gray-500">
-            <p>Política de Privacidad generada con la ayuda de <a target="_blank" href="https://www.cookieyes.com/?utm_source=PP&utm_medium=footer&utm_campaign=UW" class="text-blue-600 hover:underline">CookieYes</a>.</p>
-        </footer>
-
     </main>
+    
+    <!-- INICIO: Pie de Página Limpio -->
+    <footer style="background-color: rgb(16, 16, 20); color: rgb(235, 222, 201); padding: 48px 24px; text-align: center;">
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+            <p style="font-size: 16px;">Solo con cita previa. Así te aseguramos la dedicación y privacidad que mereces.</p>
+            <a href="https://maps.app.goo.gl/nw4j1ZTujxRtAyZz7" target="_blank" rel="noopener" style="color: white; text-decoration: none; font-size: 14px;">Carrer del Turó de la Rovira, 86, Horta-Guinardó, 08032 Barcelona</a>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; font-size: 14px; color: white;">
+                <span>© 2025 Fuchisimo Microcapilar</span>
+                <span>|</span>
+                <a href="https://fuchisimo-microcapilar.github.io/fuchisimo-politicas/" rel="noopener" style="color: white; text-decoration: none;">Política de Privacidad</a>
+                <span>|</span>
+                <a href="https://fuchisimo-microcapilar.github.io/fuchisimo-politicas/politicas-cookies" rel="noopener" style="color: white; text-decoration: none;">Política de Cookies</a>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 16px;">
+                <a href="https://www.instagram.com/fuchisimo.microcapilar.bcn/" target="_blank" rel="noopener" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="mailto:raquelgarab@gmail.com" target="_blank" rel="noopener" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"></path><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"></path></svg>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN: Pie de Página -->
 
 </body>
 </html>
