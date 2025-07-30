@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Cookies - Fuchisimo</title>
     
-    <!-- Tailwind CSS CDN para un diseño rápido y moderno -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts para una tipografía más limpia -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Aplicamos la fuente Inter a todo el cuerpo del documento */
+        /* Estilos generales */
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* bg-gray-50 */
+            color: #1f2937; /* text-gray-800 */
         }
-        /* Estilos para la tabla de cookies para mejorar la legibilidad */
+        /* Estilos para la tabla de cookies */
         .cookie-table th, .cookie-table td {
             padding: 0.75rem 1rem;
             border: 1px solid #e5e7eb; /* gray-200 */
@@ -29,12 +31,46 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <!-- Contenedor principal -->
+    <!-- INICIO: Nueva Barra de Navegación Limpia -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="https://fuchisimo-microcapilar.com/">
+                        <img class="h-12 w-12 rounded-full" src="https://framerusercontent.com/assets/gRMtga5OdqLcnRtlm6axBiGtQo.png" alt="Logo Fuchisimo">
+                    </a>
+                </div>
+
+                <!-- Links del Menú -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="https://fuchisimo-microcapilar.com/#results" class="text-gray-700 hover:text-black text-sm font-medium">Resultados</a>
+                    <a href="https://fuchisimo-microcapilar.com/#services" class="text-gray-700 hover:text-black text-sm font-medium">Servicios</a>
+                    <a href="https://fuchisimo-microcapilar.com/#raquel" class="text-gray-700 hover:text-black text-sm font-medium">Conóceme</a>
+                    <a href="https://fuchisimo-microcapilar.com/#faqs" class="text-gray-700 hover:text-black text-sm font-medium">Q&A</a>
+                    <a href="https://wa.me/34667053971?text=Hola%2C%20me%20gustaria%20saber%20mas%20informaci%C3%B3n" target="_blank" rel="noopener" class="text-gray-700 hover:text-black text-sm font-medium">Contáctanos</a>
+                </div>
+
+                <!-- Iconos Sociales -->
+                <div class="hidden md:flex md:items-center md:space-x-5">
+                    <a href="https://www.instagram.com/fuchisimo.microcapilar.bcn/" target="_blank" rel="noopener" class="text-gray-500 hover:text-gray-900">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+                    </a>
+                    <a href="mailto:raquelgarab@gmail.com" target="_blank" rel="noopener" class="text-gray-500 hover:text-gray-900">
+                        <span class="sr-only">Email</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN: Nueva Barra de Navegación -->
+
+    <!-- Contenido principal de la política -->
     <main class="mx-auto max-w-4xl w-11/12 md:w-4/5 py-8 sm:py-12">
-        
-        <!-- Encabezado de la política -->
         <header class="mb-10 border-b pb-6">
             <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Política de Cookies</h1>
             <div class="mt-2 text-sm text-gray-500">
@@ -42,45 +78,35 @@
             </div>
         </header>
 
-        <!-- Secciones de la política -->
         <div class="space-y-8">
             <section>
                 <h2 class="text-2xl font-bold mb-3 text-gray-900">¿Qué son las cookies?</h2>
-                <p>
-                    Una cookie es un pequeño archivo de texto que un sitio web almacena en su ordenador o dispositivo móvil cuando usted visita el sitio. Permite al sitio web recordar sus acciones y preferencias (como el inicio de sesión, el idioma, el tamaño de la fuente y otras preferencias de visualización) durante un período de tiempo, para que no tenga que volver a introducirlas cada vez que vuelva al sitio o navegue de una página a otra.
-                </p>
+                <p>Una cookie es un pequeño archivo de texto que un sitio web almacena en su ordenador o dispositivo móvil cuando usted visita el sitio. Permite al sitio web recordar sus acciones y preferencias (como el inicio de sesión, el idioma, el tamaño de la fuente y otras preferencias de visualización) durante un período de tiempo, para que no tenga que volver a introducirlas cada vez que vuelva al sitio o navegue de una página a otra.</p>
             </section>
-
             <section>
                 <h2 class="text-2xl font-bold mb-3 text-gray-900">¿Cómo utilizamos las cookies?</h2>
-                <p class="mb-3">
-                    En Fuchisimo, utilizamos cookies para mejorar su experiencia de navegación, permitiendo que el sitio funcione de manera más eficiente. Usamos tanto cookies propias como de terceros para diferentes propósitos, incluyendo:
-                </p>
+                <p class="mb-3">En Fuchisimo, utilizamos cookies para mejorar su experiencia de navegación, permitiendo que el sitio funcione de manera más eficiente. Usamos tanto cookies propias como de terceros para diferentes propósitos, incluyendo:</p>
                 <ul class="list-disc list-inside space-y-1">
                     <li>Asegurar el funcionamiento técnico del sitio web.</li>
                     <li>Analizar el tráfico y el comportamiento de los usuarios para mejorar nuestros servicios.</li>
                     <li>Proporcionar publicidad relevante y medir la efectividad de nuestras campañas de marketing.</li>
                 </ul>
             </section>
-
             <section>
                 <h2 class="text-2xl font-bold mb-3 text-gray-900">Tipos de Cookies que Utilizamos</h2>
                 <p class="mb-6">A continuación, se detallan las cookies específicas que utilizamos en nuestro sitio web. Por favor, revíselas para entender qué información recopilan y con qué fin.</p>
-                
-                <!-- Tabla de Cookies. Esta es la sección que debes rellenar. -->
                 <div class="overflow-x-auto">
                     <table class="min-w-full text-sm cookie-table">
                         <thead class="font-medium text-gray-700">
                             <tr>
                                 <th>Categoría</th>
-                                <th>Nombre de la Cookie</th>
+                                <th>Nombre</th>
                                 <th>Proveedor</th>
                                 <th>Propósito</th>
                                 <th>Duración</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            <!-- Ejemplo de Cookie Necesaria -->
                             <tr>
                                 <td class="font-semibold">Necesaria</td>
                                 <td>PHPSESSID</td>
@@ -88,7 +114,6 @@
                                 <td>Conserva los estados de los usuarios en todas las peticiones de la página.</td>
                                 <td>Sesión</td>
                             </tr>
-                            <!-- Ejemplo de Cookie de Analítica -->
                             <tr>
                                 <td class="font-semibold">Analítica</td>
                                 <td>_ga</td>
@@ -96,7 +121,6 @@
                                 <td>Utilizada por Google Analytics para distinguir a los usuarios.</td>
                                 <td>2 años</td>
                             </tr>
-                             <!-- Ejemplo de Cookie de Marketing -->
                             <tr>
                                 <td class="font-semibold">Marketing</td>
                                 <td>_fbp</td>
@@ -104,33 +128,46 @@
                                 <td>Utilizada por Facebook para ofrecer una serie de productos publicitarios.</td>
                                 <td>3 meses</td>
                             </tr>
-                            <!-- Añade aquí más filas <tr>...</tr> para cada cookie que encuentres -->
-
                         </tbody>
                     </table>
                 </div>
-                <p class="text-xs text-gray-500 mt-2">
-                    * Esta tabla es un ejemplo. Debes reemplazarla con las cookies reales utilizadas en el sitio.
-                </p>
+                <p class="text-xs text-gray-500 mt-2">* Esta tabla es un ejemplo. Debes reemplazarla con las cookies reales utilizadas en el sitio.</p>
             </section>
-
             <section>
                 <h2 class="text-2xl font-bold mb-3 text-gray-900">Cómo gestionar sus preferencias</h2>
-                <p>
-                    Usted puede controlar y/o eliminar las cookies como lo desee. Para más información, consulte <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">aboutcookies.org</a>. Puede eliminar todas las cookies que ya están en su ordenador y puede configurar la mayoría de los navegadores para que dejen de aceptarlas. Sin embargo, si lo hace, es posible que tenga que ajustar manualmente algunas preferencias cada vez que visite un sitio y que algunos servicios y funcionalidades no funcionen.
-                </p>
-                <p class="mt-4">
-                    Además, la mayoría de las redes publicitarias le ofrecen la posibilidad de optar por no recibir publicidad dirigida. Si desea obtener más información, visite <a href="https://www.youronlinechoices.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.youronlinechoices.com</a>.
-                </p>
+                <p>Usted puede controlar y/o eliminar las cookies como lo desee. Para más información, consulte <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">aboutcookies.org</a>. Puede eliminar todas las cookies que ya están en su ordenador y puede configurar la mayoría de los navegadores para que dejen de aceptarlas. Sin embargo, si lo hace, es posible que tenga que ajustar manualmente algunas preferencias cada vez que visite un sitio y que algunos servicios y funcionalidades no funcionen.</p>
+                <p class="mt-4">Además, la mayoría de las redes publicitarias le ofrecen la posibilidad de optar por no recibir publicidad dirigida. Si desea obtener más información, visite <a href="https://www.youronlinechoices.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.youronlinechoices.com</a>.</p>
             </section>
         </div>
-        
-        <!-- Pie de página de la política -->
-        <footer class="mt-12 pt-6 border-t text-center text-sm text-gray-500">
-            <p>Para más información sobre cómo tratamos sus datos personales, consulte nuestra <a href="/politica-de-privacidad.html" class="text-blue-600 hover:underline">Política de Privacidad</a>.</p>
-        </footer>
-
     </main>
+
+    <!-- INICIO: Pie de Página Limpio -->
+    <footer style="background-color: rgb(16, 16, 20); color: rgb(235, 222, 201); padding: 48px 24px; text-align: center;">
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+            <p style="font-size: 16px;">Solo con cita previa. Así te aseguramos la dedicación y privacidad que mereces.</p>
+            <a href="https://maps.app.goo.gl/nw4j1ZTujxRtAyZz7" target="_blank" rel="noopener" style="color: white; text-decoration: none; font-size: 14px;">Carrer del Turó de la Rovira, 86, Horta-Guinardó, 08032 Barcelona</a>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; font-size: 14px; color: white;">
+                <span>© 2025 Fuchisimo Microcapilar</span>
+                <span>|</span>
+                <a href="https://fuchisimo-microcapilar.github.io/fuchisimo-politicas/" rel="noopener" style="color: white; text-decoration: none;">Política de Privacidad</a>
+                <span>|</span>
+                <a href="https://fuchisimo-microcapilar.github.io/fuchisimo-politicas/politicas-cookies" rel="noopener" style="color: white; text-decoration: none;">Política de Cookies</a>
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 16px;">
+                <a href="https://www.instagram.com/fuchisimo.microcapilar.bcn/" target="_blank" rel="noopener" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="mailto:raquelgarab@gmail.com" target="_blank" rel="noopener" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"></path><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"></path></svg>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN: Pie de Página -->
 
 </body>
 </html>
